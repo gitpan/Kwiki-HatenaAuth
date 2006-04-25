@@ -1,0 +1,9 @@
+Changes
+Makefile.PL
+MANIFEST
+README
+t/Kwiki-HatenaAuth.t
+lib/Kwiki/HatenaAuth.pm
+lib/Kwiki/Users/HatenaAuth.pm
+lib/Kwiki/Edit/HatenaAuthRequired.pm
+META.yml                                 Module meta-data (added by MakeMaker)
