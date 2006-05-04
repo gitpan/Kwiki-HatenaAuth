@@ -1,10 +1,16 @@
-# http://module-build.sourceforge.net/META-spec.html
-#XXXXXXX This is a prototype!!!  It will change in the future!!! XXXXX#
-name:         Kwiki-HatenaAuth
-version:      0.01
-version_from: lib/Kwiki/HatenaAuth.pm
-installdirs:  site
-requires:
-
+abstract: Kwiki HatenaAuth integration
+author: Kazuhiro Osawa <ko@yappo.ne.jp>
+build_requires: 
+  Test::More: 0.42
 distribution_type: module
-generated_by: ExtUtils::MakeMaker version 6.17
+generated_by: Module::Install version 0.61
+license: perl
+name: Kwiki-HatenaAuth
+no_index: 
+  directory: 
+    - inc
+    - t
+requires: 
+  Hatena::API::Auth: 0.03
+  URI::Escape: 0
+version: 0.02

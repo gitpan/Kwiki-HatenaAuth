@@ -2,7 +2,9 @@ Changes
 Makefile.PL
 MANIFEST
 README
-t/Kwiki-HatenaAuth.t
+t/00_compile.t
+t/98-pod.t
+t/99-pod-coverage.t
 lib/Kwiki/HatenaAuth.pm
 lib/Kwiki/Users/HatenaAuth.pm
 lib/Kwiki/Edit/HatenaAuthRequired.pm

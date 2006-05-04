@@ -1,11 +1,17 @@
-use ExtUtils::MakeMaker;
-# See lib/ExtUtils/MakeMaker.pm for details of how to influence
-# the contents of the Makefile that is written.
-WriteMakefile(
-    NAME              => 'Kwiki::HatenaAuth',
-    VERSION_FROM      => 'lib/Kwiki/HatenaAuth.pm', # finds $VERSION
-    PREREQ_PM         => {}, # e.g., Module::Name => 1.1
-    ($] >= 5.005 ?     ## Add these new keywords supported since 5.005
-      (ABSTRACT_FROM  => 'lib/Kwiki/HatenaAuth.pm', # retrieve abstract from module
-       AUTHOR         => 'Kazuhiro Osawa <ko@yappo.ne.jp>') : ()),
-);
+use inc::Module::Install;
+ 
+name('Kwiki-HatenaAuth');
+author('Kazuhiro Osawa <ko@yappo.ne.jp>');
+license('perl');
+all_from('lib/Kwiki/HatenaAuth.pm');
+
+requires('Hatena::API::Auth' => 0.03);
+requires('URI::Escape');
+
+build_requires(Test::More => 0.42);
+
+auto_include;
+auto_install;
+WriteAll;
+
+
