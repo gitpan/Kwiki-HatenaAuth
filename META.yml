@@ -14,4 +14,4 @@ requires:
   Hatena::API::Auth: 0.03
   Kwiki::UserName: 0
   URI::Escape: 0
-version: 0.03
+version: 0.04
