@@ -7,6 +7,7 @@ all_from('lib/Kwiki/HatenaAuth.pm');
 
 requires('Hatena::API::Auth' => 0.03);
 requires('URI::Escape');
+requires('Kwiki::UserName');
 
 build_requires(Test::More => 0.42);
 

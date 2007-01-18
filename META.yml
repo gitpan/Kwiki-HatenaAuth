@@ -3,7 +3,7 @@ author: Kazuhiro Osawa <ko@yappo.ne.jp>
 build_requires: 
   Test::More: 0.42
 distribution_type: module
-generated_by: Module::Install version 0.61
+generated_by: Module::Install version 0.64
 license: perl
 name: Kwiki-HatenaAuth
 no_index: 
@@ -12,5 +12,6 @@ no_index:
     - t
 requires: 
   Hatena::API::Auth: 0.03
+  Kwiki::UserName: 0
   URI::Escape: 0
-version: 0.02
+version: 0.03
